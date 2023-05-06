@@ -1,0 +1,23 @@
+bootstrap is a library
+by using bootstrap we easily add nice styles to the website
+
+how to access the admin page of django site?
+ can see the data of our project in admin page
+
+ pyhton manage.py createsuperuser
+
+ by default database not created so create database and add some bunch of tables we use migrate command such as
+ python manage.py makemigrations----(ie to update database changes or to get changes to the database)
+  this command will detect the changes and update the database
+ python manage.py migrate
+
+  our project in order to work  properly we need to apply migration for some apps such as admin,auth,content type,session
+
+
+django has inbuilt orm (object relational mapper).it allows us  access our databases
+
+to view the sql code that is going to run command we use
+python mamange.py sqlmigrate blog 0001
+
+django python shell allows us to work with models line line by line
+now shell will be opened here we can run python code and django objects
